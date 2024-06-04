@@ -1,8 +1,14 @@
 # Upload to Server
-## Usage
-**First step:** copy the ```upload_to_server.vim``` file to your ```~/.vim/plugin/``` folder.
+This Vim plugin transfers files from the local host to the remote server.<br>
+It was initially created for transferring files to the **OpenVMS** operating system (and was tested on it), but it should also work for other systems.<br>
 
-**Second step:** add the below code to your vimrc file and config them:
+Under the hood, the plugin uses **SCP** for file transferring.<br>
+So you need to have **SSH** and **SSHPASS** installed on your machine and you should configure your SSH connection credentials correctly in your vimrc file.<br>
+
+## Usage
+**First step:** Copy the ```upload_to_server.vim``` file to your ```~/.vim/plugin/``` folder.
+
+**Second step:** Add the below code to your vimrc file and config them:
 
 ```vim
 " Define the connection credentials
