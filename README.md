@@ -1,9 +1,10 @@
 # Upload to Server
 This Vim plugin connects your local repository with your remote repository and transfers files from the local repo to the remote server.<br>
-It was initially created for transferring files to the **OpenVMS** operating system (and was tested on it), but it should also work for other systems.<br>
 
 Under the hood, the plugin uses **SCP** for file transferring.<br>
-So you need to have **SSH** and **SSHPASS** installed on your machine and you should configure your SSH connection credentials correctly in your vimrc file.<br>
+So you need to have **SSH** and **SSHPASS** installed on your machine and you should configure your SSH connection credentials correctly in your vimrc file.<be>
+
+The plugin was initially created for transferring files to the **OpenVMS** operating system (and was tested on it), but it should also work for other systems.<br>
 
 ## Prepare
 **First step:** Copy the ```upload_to_server.vim``` file to your ```~/.vim/plugin/``` folder.
