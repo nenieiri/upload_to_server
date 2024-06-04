@@ -1,4 +1,6 @@
-# upload_to_server
+# Upload to Server
+## Usage
+**Add the below code to your vimrc file and config them:**
 ```vim
 " Define the connection credentials
 let g:user_UtS = 'username'
