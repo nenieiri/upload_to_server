@@ -5,7 +5,7 @@ It was initially created for transferring files to the **OpenVMS** operating sys
 Under the hood, the plugin uses **SCP** for file transferring.<br>
 So you need to have **SSH** and **SSHPASS** installed on your machine and you should configure your SSH connection credentials correctly in your vimrc file.<br>
 
-## Usage
+## Prepare
 **First step:** Copy the ```upload_to_server.vim``` file to your ```~/.vim/plugin/``` folder.
 
 **Second step:** Add the below code to your vimrc file and config them:
@@ -31,3 +31,5 @@ let g:exclude_dirs_UtS = []
 " Or leave it empty
 let g:exclude_exts_UtS = []
 ```
+
+## Usage
