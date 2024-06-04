@@ -35,9 +35,9 @@ let g:exclude_exts_UtS = []
 
 ## Usage
 There are **4** commands that you can use:
-- ```:PutInit```  (CTRL+I) - creates plugin internal file (called _repoTimeFile.txt_) for saving repositories' files' last modification date. This is needed for Quick upload. You need to run this command only once, after preparation.
-- ```:PutFile```  (CTRL+P) - transfer the current file to the remote server and update repoTimeFile.txt.
-- ```:PutAll```   (CTRL+A) - transfer all the repo files to the remote server and update repoTimeFile.txt.
-- ```:PutQuick``` (CTRL+Q) - transfer all repo files that were updated compared to their time in the repoTimeFile and update it.
+- ```:PutInit```&nbsp;&nbsp;(CTRL+I) - creates plugin internal file (called _repoTimeFile.txt_) for saving repositories' files' last modification date. This is needed for Quick upload. You need to run this command only once, after preparation.
+- ```:PutFile```&nbsp;&nbsp;(CTRL+P) - transfer the current file to the remote server and update repoTimeFile.txt.
+- ```:PutAll```&nbsp;&nbsp;(CTRL+A) - transfer all the repo files to the remote server and update repoTimeFile.txt.
+- ```:PutQuick```&nbsp;(CTRL+Q) - transfer all repo files that were updated compared to their time in the repoTimeFile and update it.
 
 Hotkeys work in **Normal mode** only.
