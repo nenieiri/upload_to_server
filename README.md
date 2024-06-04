@@ -1,5 +1,5 @@
 # Upload to Server
-This Vim plugin transfers files from the local host to the remote server.<br>
+This Vim plugin connects your local repository with your remote repository and transfers files from the local repo to the remote server.<br>
 It was initially created for transferring files to the **OpenVMS** operating system (and was tested on it), but it should also work for other systems.<br>
 
 Under the hood, the plugin uses **SCP** for file transferring.<br>
