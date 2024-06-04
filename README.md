@@ -9,7 +9,7 @@ let g:host_UtS = '10.11.11.11'
 let g:algorithm_UtS = ''
 
 " Define the local and remote repo paths
-let g:local_repo_path_UtS = expand('~/Documents/exampleRepo/')
+let g:local_repo_path_UtS = expand('~/Documents/exampleRepo')
 let g:remote_repo_path_UtS = '/WORK/USER/myProjects/test'
 
 " Define directories which you don't want to trasfer
