@@ -1,6 +1,9 @@
 # Upload to Server
 ## Usage
-**Add the below code to your vimrc file and config them:**
+**First step:** copy the ```upload_to_server.vim``` file to your ```~/.vim/plugin/``` folder.
+
+**Second step:** add the below code to your vimrc file and config them:
+
 ```vim
 " Define the connection credentials
 let g:user_UtS = 'username'
