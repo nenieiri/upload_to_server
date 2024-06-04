@@ -39,3 +39,5 @@ There are **4** commands that you can use:
 - ```:PutFile```  (CTRL+P) - transfer the current file to the remote server and update repoTimeFile.txt.
 - ```:PutAll```   (CTRL+A) - transfer all the repo files to the remote server and update repoTimeFile.txt.
 - ```:PutQuick``` (CTRL+Q) - transfer all repo files that were updated compared to their time in the repoTimeFile and update it.
+
+Hotkeys work in **Normal mode** only.
