@@ -3,7 +3,7 @@
 " Define the connection credentials
 let g:user_UtS = 'username'
 let g:password_UtS = 'password'
-" or leave it empty like this - let g:password_VMS = ''
+" or leave it empty like this - let g:password_UtS = ''
 
 let g:host_UtS = '10.11.11.11'
 let g:algorithm_UtS = ''
