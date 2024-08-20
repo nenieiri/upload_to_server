@@ -6,7 +6,7 @@
 "    By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2024/06/04 18:12:58 by vismaily          #+#    #+#              "
-"    Updated: 2024/06/04 18:13:14 by vismaily         ###   ########.fr        "
+"    Updated: 2024/08/20 11:22:49 by vismaily         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -304,6 +304,8 @@ function! PutAllFiles(user, password, host, algorithm, local_base_path, remote_b
 	" Recursively get the list of files
 	let [l:res_local, l:res_remote] = Get_files_recursive(a:local_base_path, a:remote_base_path)
 
+	echo l:res_local
+
 	let l:status =  PutFiles(l:command, a:user, a:host, a:remote_base_path, l:res_local, l:res_remote)
 	if l:status == -1
 		return -1
@@ -440,8 +442,19 @@ function! SCPFile(user, password, host, algorithm, local_base_path, remote_base_
 		endif
 
 		" Update the repo time file
-		let l:update_status = UpdateRepoTimeFile(a:repo_time_file, a:file, l:repo_times)
+		let l:repo_times[a:file] = GetFileModificationDate(a:file)
+        let l:lines = []
+        for [file_path, mod_time] in items(l:repo_times)
+            call add(l:lines, file_path . '|' . mod_time)
+        endfor
+
+        let l:update_status = writefile(l:lines, a:repo_time_file, 'w')
+
 		if l:update_status == -1
+			echohl ErrorMsg
+			echo "ERROR: Failed to update repo time file."
+			echo " "
+			echohl NONE
 			return -1
 		else
 			echohl MoreMsg
