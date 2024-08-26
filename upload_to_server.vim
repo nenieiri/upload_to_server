@@ -304,8 +304,6 @@ function! PutAllFiles(user, password, host, algorithm, local_base_path, remote_b
 	" Recursively get the list of files
 	let [l:res_local, l:res_remote] = Get_files_recursive(a:local_base_path, a:remote_base_path)
 
-	echo l:res_local
-
 	let l:status =  PutFiles(l:command, a:user, a:host, a:remote_base_path, l:res_local, l:res_remote)
 	if l:status == -1
 		return -1
